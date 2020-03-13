@@ -1,38 +1,69 @@
-.App {
+/* .FormFavFilm {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 30px;
+}
+
+.FormFavFilm h1 {
   text-align: center;
+  font-size: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.FormFavFilm .form-data {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+
+.FormFavFilm .form-data label {
+  display: inline-block;
+  width: 75px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.FormFavFilm .form-data input:not([type="submit"]) {
+  flex-grow: 1;
+} */
+
+.FormFavFilm {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.FormFavFilm form {
+  width: max-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.FormFavFilm fieldset {
+  padding: 20px 20px 10px 20px;
+}
+
+.form-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+}
+
+.FormFavFilm input, textarea {
+  margin-left: 10px;
+  border: 1px solid black;
+  width: 200px;
+  padding: 5px;
+}
+
+.FormFavFilm button {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 20px;
+  margin-top: 5px;
 }
